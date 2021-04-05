@@ -1,0 +1,552 @@
+/* layout
+____________________________ */
+html, body, #home{
+	/*height: 100%;*/
+	overflow-x: hidden; /*esconde a barra de rolagem na horizontal*/
+	scroll-behavior: smooth;
+
+}
+
+body{
+	background-color: #F9F6EF;
+	font-family: Helvetica, Arial, Futura, sans-serif;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/* fontes
+_____________________________*/
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bon Vivant';
+    src: url('../fonts/BonVivant-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sackers Gothic Std';
+    src: url('../fonts/SackersGothicStd-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sackers Gothic Std';
+    src: url('../fonts/SackersGothicStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sackers Gothic Std';
+    src: url('../fonts/SackersGothicStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* barra de navegação
+____________________________ */
+nav{
+	margin: auto;
+}
+.logo {
+	margin-left: 20px;
+
+}
+#navegacao{
+	margin-left: 750px;
+}
+
+.navbar-color{
+	padding: 15px 0px;
+	background: linear-gradient(90deg, #D4E1EA, #CBF0E4, #FFD7A9, #F9D1C7);
+}
+
+.navbar-nav .nav-link{
+	color: #1D1D1B;
+	margin-left: 5px;
+	font-family: 'Sackers Gothic Std';
+	font-weight: bold;
+}
+
+.navbar-nav .nav-link:active {
+	text-decoration: underline;
+}
+
+
+.navbar-toggler{
+	color: rgb(255,255,255,.5);
+	border-color: rgba(255,255,255,0.5);
+}
+
+.divisor{
+	margin: 8px 10px;
+}
+
+.button{
+	background-color: #F9F6EF;
+	background-size: 5px;
+	border: 2px solid #1D1D1B;
+	border-radius: 9px;
+	padding: -20px -20px;
+	vertical-align: middle;
+}
+
+.button:hover{
+	background-color:#1D1D1B;
+	color: #F9F6EF;
+	border-color: #F9F6EF;
+}
+
+/* index
+____________________________ */
+
+.capa{
+	margin: 200px 0px 0px -450px;
+}
+
+.text-home{
+	font-size: 3em;
+	font-family: 'Sackers Gothic Std';
+	font-weight: 900;
+	letter-spacing: -0.04em;
+	margin: 300px 0px 0px 0px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.text-home2{
+	font-family: 'Bon Vivant'; 
+	font-size: 2em;
+	font-weight: normal;
+	text-transform: lowercase;
+
+}
+
+a.link-home{
+	font-size: 0.5em;
+	color: #1D1D1B;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: #FFD7A9; 
+	font-family: 'Sackers Gothic Std';
+
+}
+
+a.link-home:hover{
+	font-size: 0.5em;
+	background: #CBF0E4;
+	padding: 5px;
+	color: #1D1D1B;
+	text-decoration: underline;
+	font-family: 'Sackers Gothic Std';
+
+}
+
+/* quotes
+___________________________ */
+.quote1{
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: 900;
+
+}
+
+.divisor1{
+	height: 5px;
+	width: 247px;
+	background: #D4E1EA;
+	margin: 0px 0px 5px;
+}
+
+.divisor2{
+	height: 5px;
+	width: 247px;
+	background: #CBF0E4;
+	margin: 0px 0px 5px;
+}
+
+.divisor3{
+	height: 5px;
+	width: 247px;
+	background: #F9D1C7;
+	margin: 0px 0px 5px;
+}
+
+.divisor4{
+	height: 5px;
+	width: 247px;
+	background: #FFD7A9;
+	margin: 0px 0px 5px;
+}
+
+/* proyectos recientes
+___________________________ */
+
+.title-proj{
+	color: #1D1D1B;
+	font-size: 1.5em;
+	font-family: 'Sackers Gothic Std';
+	font-weight: 400;
+	letter-spacing: -0.04em;
+	background: linear-gradient(90deg, #D4E1EA, #CBF0E4, #FFD7A9, #F9D1C7);
+	padding: 0 0 2px 5px;
+	width: 300px;
+}
+
+/* proyectos portfolio
+____________________________ */
+
+.port-title{
+	/*background: #FFD7A9;*/
+	width: 7em;
+	margin-top: 10px;
+	margin-left: 200px;
+	padding: 0 0 2px 5px;
+}
+
+.port-title p{
+	color: #1D1D1B;
+	font-size: 2em;
+	font-family: 'Roboto Slab';
+	font-weight: 400;
+	margin: 0 0 5em 0;
+}
+
+.size{
+	width: 530px;
+	height: 374px;
+}
+
+/* sobre
+___________________________ */
+
+.foto1{
+	width: 950px;
+	height: 650px;
+	margin: 200px 0px 200px -450px;
+
+}
+
+.text1{
+	margin: 400px 0px 200px 400px;
+}
+
+.foto2{
+	width: 950px;
+	height: 650px;
+	margin: 200px 0px 0px 100px;
+	
+}
+
+.text2{
+	margin: 400px 5px 0px 0px;
+}
+
+.sobre{
+	background: url('../img/bgsobre1.png') no-repeat center;
+
+}
+p.quote-sobre{
+	color: #1D1D1B;
+	font-size: 6em;
+	font-family: 'Bon Vivant';
+	font-weight: normal;
+    font-style: italic;
+    margin-top: -0.5em;
+}
+
+/* proyecto
+____________________________ */
+
+p.start{
+	color: #1D1D1B;
+	font-size: 6em;
+	font-family: 'Bon Vivant';
+	font-weight: normal;
+    font-style: italic;
+    margin: 1.5em 0em 1em 0em ;
+}
+
+p.bold{
+	font-weight: bold;
+
+}
+
+ul.start li{
+	list-style-image: url('../img/lista.png');
+}
+
+mark.blue{
+	background-color: #D4E1EA;
+	width: 20px;
+	height: 20px;
+}
+
+mark.green{
+	background: #CBF0E4;
+}
+
+mark.pink{
+	background: #F9D1C7;
+}
+
+mark.yellow{
+	background: #FFD7A9;
+}
+
+
+
+/* footer
+____________________________ */
+.scrollup{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    z-index: 2000;
+}
+
+/*.up{
+	position: fixed;
+}*/
+
+
+footer{
+	background: linear-gradient(90deg, #D4E1EA, #CBF0E4, #FFD7A9, #F9D1C7);
+	padding: 15px 0px;
+	margin: auto;
+	position: relative;
+}
+
+footer h4{
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav {
+	margin-left: -300px;
+}
+
+footer .navbar-nav a{
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+	text-decoration: underline;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	float: right;
+	margin: 0px 5px;
+}
+
+.rrss{
+	margin-left: 400px;
+}
+
+.divisor0{
+	margin: 5px 10px;
+}
+
+
+/* tipografia
+____________________________ */
+h1{
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2{
+	color: #1D1D1B;
+	font-size: 3em;
+	font-family: 'Sackers Gothic Std';
+	font-weight: 500;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	color: #1D1D1B;
+	font-size: 1.5em;
+	font-family: 'Sackers Gothic Std';
+	font-weight: 400;
+	letter-spacing: -0.04em;
+}
+
+
+h4{
+	color: #1D1D1B;
+	font-size: 1.3em;
+	font-family: 'Sackers Gothic Std';
+	font-weight: 500;
+	letter-spacing: -0.04em;
+}
+
+
+h5 {
+	color: #1D1D1B;
+	font-size: 1em;
+	font-family: 'Sackers Gothic Std';
+	font-weight: 400;
+	letter-spacing: -0.04em;
+}
+
+p{
+	color: #1D1D1B;
+	font-size: 1em;
+	font-family: 'Roboto Slab';
+	font-weight: 400;
+}
+
+ul li{
+	color: #1D1D1B;
+	font-size: 1em;
+	font-family: 'Roboto Slab';
+	font-weight: 400;
+}
+
+
+
+/* media queries
+____________________________ */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.btn-custom{
+		margin: 10px 15px; 
+		font-size: 1em;
+	}
+
+	footer h4{
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+
+	.redes li a img{
+	list-style: none;
+	float: right;
+	margin: 0px 1px;
+	width: 36px;
+	height: 36px;
+	}
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1{
+		font-size: 3em;
+	}
+
+	.btn-custom{
+		margin: 10px 15px; 
+	}
+
+	.redes li a img{
+	list-style: none;
+	float: right;
+	margin: 0px 1px;
+	width: 35px;
+	height: 35px;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1{
+		font-size: 4em;
+	}
+
+	.btn-custom{
+		margin: 10px 7px; 
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1{
+		font-size: 5em;
+	}
+
+	.btn-custom{
+		margin: 10px 20px; 
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	h1{
+		font-size: 6em;
+	}
+
+	.btn-custom{
+		margin: 10px 20px; 
+	}
+}
